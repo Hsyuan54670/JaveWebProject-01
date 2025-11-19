@@ -18,7 +18,6 @@ const stuImpl = ref({
     gender:'',
     phone:'',
     idCard:'',
-    clazzId:'',
     isCollege:'',
     address:'',
     degree:'',
