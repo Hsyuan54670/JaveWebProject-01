@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hsyuan.tliaswebstduy.mapper.StudentMapper">
+    <insert id="insert">
+        insert into student (name, gender, clazz_id, degree,no,phone,is_college,address,graduation_date,id_card,create_time,update_time)
+        values (#{name}, #{gender}, #{clazzId}, #{degree},#{no},#{phone},#{isCollege},#{address},#{graduationDate},#{idCard},#{createTime},#{updateTime})
+    </insert>
+    <update id="update">
+        update student set name=#{name}, gender=#{gender}, clazz_id=#{clazzId},
+                           degree=#{degree},no=#{no},phone=#{phone},is_college=#{isCollege},
+                           address=#{address},graduation_date=#{graduationDate},id_card=#{idCard},update_time=#{updateTime},
+                           violation_score=#{violationScore},violation_count=#{violationCount}
+                           where id=#{id}
+    </update>
+
+    <delete id="deleteByIds">
+        delete from student where id in
+        <foreach collection="ids" item="id" open="(" close=")" separator=",">
+            #{id}
+        </foreach>
+    </delete>
+
+    <select id="selectAll" resultType="com.hsyuan.tliaswebstduy.pojo.Student">
+        select s.*,clazz.name clazzName from student s
+        left join clazz
+            on s.clazz_id = clazz.id
+        <where>
+            <if test="clazzId != null">
+                and clazz_id = #{clazzId}
+            </if>
+            <if test="name != null and name != ''">
+                and name like concat('%', #{name}, '%')
+            </if>
+            <if test="degree != null and degree != ''">
+                and degree = #{degree}
+            </if>
+        </where>order by update_time desc
+    </select>
+    <select id="findById" resultType="com.hsyuan.tliaswebstduy.pojo.Student">
+        select * from student where id = #{id}
+    </select>
+<!--    1:初中, 2:高中, 3:大专, 4:本科, 5:硕士, 6:博士-->
+    <select id="countStudentDegreeData" resultType="java.util.Map">
+        select (case degree when 1 then '初中'
+                   when 2 then '高中'
+                   when 3 then '大专'
+                   when 4 then '本科'
+                   when 5 then '硕士'
+                   when 6 then '博士'
+                   else '未知'
+               end) name,
+            count(*)  value
+        from student
+        group by degree
+    </select>
+
+    <select id="countStudentClazzData" resultType="java.util.Map">
+        select
+            clazz.name as name,
+            count(*) as num
+        from student
+        left join clazz
+            on student.clazz_id = clazz.id
+        group by clazz.name;
+    </select>
+
+    <select id="selectAllById" resultType="com.hsyuan.tliaswebstduy.pojo.Student">
+        select * from student where clazz_id = #{id}
+    </select>
+</mapper>

@@ -1,0 +1,103 @@
+# ==================================================
+# 应用基础配置
+# ==================================================
+spring:
+  application:
+    name: Tlias-web-study
+
+  # ==================================================
+  # 数据库连接核心配置（MySQL + Druid）
+  # ==================================================
+  datasource:
+    # 数据源类型：指定使用Druid连接池（替代默认HikariCP）
+    # type: com.alibaba.druid.pool.DruidDataSource
+
+    # 数据库驱动类名（MySQL 8.x必须使用此路径，兼容高版本JDK）
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # 数据库连接URL：默认localhost:3306，数据库名test
+    # 附加参数：关闭SSL、开启预处理语句、允许公钥检索（解决本地连接报错）
+    url: jdbc:mysql:///tlias?useSSL=false&useServerPrepStmts=true&allowPublicKeyRetrieval=true
+    # 数据库登录用户名
+    username: root
+    # 数据库登录密码
+    password: "054670"
+  servlet:
+    multipart:
+      #最大单个文件大小
+      max-file-size: 10MB
+      #最大请求大小(包括所有信息)
+      max-request-size: 100MB
+    # ==================================================
+    # Druid连接池性能优化配置
+    # ==================================================
+
+#    druid:
+#      # 连接池基础配置
+#      initial-size: 5
+#      max-active: 20
+#      min-idle: 5
+#      max-wait: 60000
+#
+#      # 连接有效性检测
+#      validation-query: "SELECT 1"
+#      test-while-idle: true
+#      test-on-borrow: false
+#      test-on-return: false
+#
+#      # 连接回收配置
+#      time-between-eviction-runs-millis: 60000
+#      min-evictable-idle-time-millis: 300000
+#
+#      # 性能优化配置
+#      async-init: true
+#      pool-prepared-statements: true
+#      max-pool-prepared-statement-per-connection-size: 20
+#
+#      # ==================================================
+#      # Druid监控与安全配置
+#      # ==================================================
+#      # 监控过滤器配置
+#      filters: stat
+#
+#      # Web请求监控配置
+#      web-stat-filter:
+#        enabled: true
+#        url-pattern: "/*"
+#        exclusions: "/druid/*"
+#
+#      # 监控页面配置
+#      stat-view-servlet:
+#        enabled: true
+#        url-pattern: "/druid/*"
+#        login-username: "Hsyuan"
+#        login-password: "054670"
+
+# ==================================================
+# MyBatis配置
+# ==================================================
+mybatis:
+  configuration:
+    # MyBatis日志输出：打印SQL到控制台（开发环境调试用）
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    #驼峰命名映射开关
+    map-underscore-to-camel-case: true
+  # Mapper XML文件扫描路径
+  mapper-locations: classpath:mapper/*.xml
+
+# ==================================================
+# 事务配置
+# ==================================================
+logging:
+  level:
+    # 开启事务管理日志
+    org.springframework.jdbc.support.JdbcTransactionManager: DEBUG
+
+
+# ==================================================
+# 阿里云OSS配置
+# ==================================================
+aliyun:
+  oss:
+    endpoint: "https://oss-cn-hangzhou.aliyuncs.com"
+    bucketName: "tlias-hsyuan-study"
+    region: "cn-hangzhou"

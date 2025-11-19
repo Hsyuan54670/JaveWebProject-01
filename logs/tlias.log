@@ -1,0 +1,37 @@
+2025-11-17 10:53:30.900 [main] INFO  c.hsyuan.tliaswebstduy.config.ThirdPartyConfigTest - Starting ThirdPartyConfigTest using Java 25 with PID 23500 (started by 28257 in D:\AForAll\Java\Projects\springboot-web-quickstart\Tlias-web-stduy)
+2025-11-17 10:53:30.909 [main] INFO  c.hsyuan.tliaswebstduy.config.ThirdPartyConfigTest - No active profile set, falling back to 1 default profile: "default"
+2025-11-17 10:53:33.815 [main] INFO  com.hsyuan.tliaswebstduy.config.ThirdPartyConfig - 初始化雪花算法ID生成器，workerId: 1, datacenterId: 1
+2025-11-17 10:53:33.887 [main] INFO  com.hsyuan.tliaswebstduy.config.ThirdPartyConfig - 初始化固定大小线程池，核心线程数: 32
+2025-11-17 10:53:33.895 [main] INFO  com.hsyuan.tliaswebstduy.config.ThirdPartyConfig - 初始化单线程执行器
+2025-11-17 10:53:33.901 [main] INFO  com.hsyuan.tliaswebstduy.config.ThirdPartyConfig - 配置HTTP工具类Bean
+2025-11-17 10:53:33.911 [main] INFO  com.hsyuan.tliaswebstduy.config.ThirdPartyConfig - 初始化第三方服务客户端
+2025-11-17 10:53:35.611 [main] INFO  c.hsyuan.tliaswebstduy.config.ThirdPartyConfigTest - Started ThirdPartyConfigTest in 5.503 seconds (process running for 8.816)
+2025-11-17 10:53:35.620 [main] INFO  com.hsyuan.tliaswebstduy.config.EncodingConfig - === 系统编码配置检查 ===
+2025-11-17 10:53:35.621 [main] INFO  com.hsyuan.tliaswebstduy.config.EncodingConfig - file.encoding: UTF-8
+2025-11-17 10:53:35.622 [main] INFO  com.hsyuan.tliaswebstduy.config.EncodingConfig - sun.jnu.encoding: UTF-8
+2025-11-17 10:53:35.622 [main] INFO  com.hsyuan.tliaswebstduy.config.EncodingConfig - 默认编码: null
+2025-11-17 10:53:35.622 [main] INFO  com.hsyuan.tliaswebstduy.config.EncodingConfig - === 编码配置完成 ===
+2025-11-17 10:53:36.794 [main] INFO  c.hsyuan.tliaswebstduy.config.ThirdPartyConfigTest - === 测试自定义第三方服务 ===
+2025-11-17 10:53:36.794 [main] INFO  c.hsyuan.tliaswebstduy.config.ThirdPartyConfigTest - 服务信息: 第三方服务客户端，服务地址: https://api.thirdparty.com
+2025-11-17 10:53:36.795 [main] INFO  com.hsyuan.tliaswebstduy.config.ThirdPartyConfig - 连接到第三方服务: https://api.thirdparty.com
+2025-11-17 10:53:36.795 [main] INFO  c.hsyuan.tliaswebstduy.config.ThirdPartyConfigTest - ✅ 自定义第三方服务测试成功
+2025-11-17 10:53:36.825 [main] INFO  c.hsyuan.tliaswebstduy.config.ThirdPartyConfigTest - === 综合测试：验证所有第三方Bean注入 ===
+2025-11-17 10:53:36.825 [main] INFO  c.hsyuan.tliaswebstduy.config.ThirdPartyConfigTest - ✅ 所有第三方Bean都成功注入IOC容器！
+2025-11-17 10:53:36.826 [main] INFO  c.hsyuan.tliaswebstduy.config.ThirdPartyConfigTest - === 第三方Bean配置测试完成 ===
+2025-11-17 10:53:36.835 [main] INFO  c.hsyuan.tliaswebstduy.config.ThirdPartyConfigTest - === 测试HTTP工具类Bean ===
+2025-11-17 10:53:36.835 [main] INFO  c.hsyuan.tliaswebstduy.config.ThirdPartyConfigTest - HTTP工具类类型: cn.hutool.http.HttpUtil
+2025-11-17 10:53:36.835 [main] INFO  c.hsyuan.tliaswebstduy.config.ThirdPartyConfigTest - ✅ HTTP工具类Bean注入成功
+2025-11-17 10:53:36.845 [main] INFO  c.hsyuan.tliaswebstduy.config.ThirdPartyConfigTest - === 测试雪花算法ID生成器 ===
+2025-11-17 10:53:36.845 [main] INFO  c.hsyuan.tliaswebstduy.config.ThirdPartyConfigTest - 生成的ID 1: 1990251950901432320
+2025-11-17 10:53:36.845 [main] INFO  c.hsyuan.tliaswebstduy.config.ThirdPartyConfigTest - 生成的ID 2: 1990251950901432321
+2025-11-17 10:53:36.845 [main] INFO  c.hsyuan.tliaswebstduy.config.ThirdPartyConfigTest - 生成的ID 3: 1990251950901432322
+2025-11-17 10:53:36.846 [main] INFO  c.hsyuan.tliaswebstduy.config.ThirdPartyConfigTest - 生成的ID 4: 1990251950905626624
+2025-11-17 10:53:36.846 [main] INFO  c.hsyuan.tliaswebstduy.config.ThirdPartyConfigTest - 生成的ID 5: 1990251950905626625
+2025-11-17 10:53:36.846 [main] INFO  c.hsyuan.tliaswebstduy.config.ThirdPartyConfigTest - ✅ 雪花算法ID生成器测试成功
+2025-11-17 10:53:36.856 [main] INFO  c.hsyuan.tliaswebstduy.config.ThirdPartyConfigTest - === 测试线程池Bean ===
+2025-11-17 10:53:36.856 [main] INFO  c.hsyuan.tliaswebstduy.config.ThirdPartyConfigTest - 固定线程池状态: 运行中
+2025-11-17 10:53:36.857 [main] INFO  c.hsyuan.tliaswebstduy.config.ThirdPartyConfigTest - 单线程执行器状态: 运行中
+2025-11-17 10:53:36.857 [pool-2-thread-1] INFO  c.hsyuan.tliaswebstduy.config.ThirdPartyConfigTest - 固定线程池任务执行: 线程ID生成测试
+2025-11-17 10:53:36.858 [pool-2-thread-1] INFO  c.hsyuan.tliaswebstduy.config.ThirdPartyConfigTest - 任务中生成的ID: 1990251950955958272
+2025-11-17 10:53:36.859 [pool-3-thread-1] INFO  c.hsyuan.tliaswebstduy.config.ThirdPartyConfigTest - 单线程执行器任务执行: 简单的日志输出
+2025-11-17 10:53:37.865 [main] INFO  c.hsyuan.tliaswebstduy.config.ThirdPartyConfigTest - ✅ 线程池Bean测试成功

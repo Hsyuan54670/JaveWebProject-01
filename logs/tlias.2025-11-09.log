@@ -1,0 +1,58 @@
+2025-11-09 10:57:57.680 [main] INFO  com.hsyuan.tliaswebstduy.TliasWebStduyApplication - Starting TliasWebStduyApplication using Java 22.0.2 with PID 40076 (D:\AForAll\Java\Projects\springboot-web-quickstart\Tlias-web-stduy\target\classes started by 28257 in D:\AForAll\Java\Projects\springboot-web-quickstart\Tlias-web-stduy)
+2025-11-09 10:57:57.683 [main] INFO  com.hsyuan.tliaswebstduy.TliasWebStduyApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-09 10:57:58.797 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-09 10:57:58.800 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-09 10:57:58.800 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-09 10:57:58.856 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-09 10:57:59.388 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-09 10:57:59.424 [main] INFO  com.hsyuan.tliaswebstduy.TliasWebStduyApplication - Started TliasWebStduyApplication in 2.26 seconds (process running for 2.823)
+2025-11-09 10:59:33.056 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-09 10:59:33.105 [http-nio-8080-exec-1] INFO  c.hsyuan.tliaswebstduy.controller.DeptController - 查询全部部门数据
+2025-11-09 10:59:33.131 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-09 10:59:33.376 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3f3fed53
+2025-11-09 10:59:33.379 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-09 10:59:34.696 [http-nio-8080-exec-3] INFO  c.hsyuan.tliaswebstduy.controller.DeptController - 查询全部部门数据
+2025-11-09 10:59:34.713 [http-nio-8080-exec-2] INFO  com.hsyuan.tliaswebstduy.controller.EmpController - 分页查询：1 ，10
+2025-11-09 10:59:36.856 [http-nio-8080-exec-4] INFO  com.hsyuan.tliaswebstduy.controller.EmpController - 分页查询：2 ，10
+2025-11-09 10:59:41.873 [http-nio-8080-exec-5] INFO  com.hsyuan.tliaswebstduy.controller.EmpController - 分页查询：2 ，10
+2025-11-09 10:59:47.504 [http-nio-8080-exec-6] INFO  com.hsyuan.tliaswebstduy.controller.EmpController - 分页查询：3 ，10
+2025-11-09 11:00:00.043 [main] INFO  com.hsyuan.tliaswebstduy.TliasWebStduyApplication - Starting TliasWebStduyApplication v0.0.1-SNAPSHOT using Java 22.0.2 with PID 43288 (D:\AForAll\Java\Projects\springboot-web-quickstart\Tlias-web-stduy\target\Tlias-web-stduy-0.0.1-SNAPSHOT.jar started by 28257 in D:\AForAll\Java\Projects\springboot-web-quickstart\Tlias-web-stduy)
+2025-11-09 11:00:00.046 [main] INFO  com.hsyuan.tliaswebstduy.TliasWebStduyApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-09 11:00:01.884 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-09 11:00:01.888 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-09 11:00:01.888 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-09 11:00:01.932 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-09 11:00:03.510 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-09 11:00:03.540 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-11-09 11:00:03.659 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-11-09 11:00:29.301 [main] INFO  com.hsyuan.tliaswebstduy.TliasWebStduyApplication - Starting TliasWebStduyApplication v0.0.1-SNAPSHOT using Java 22.0.2 with PID 39408 (D:\AForAll\Java\Projects\springboot-web-quickstart\Tlias-web-stduy\target\Tlias-web-stduy-0.0.1-SNAPSHOT.jar started by 28257 in D:\AForAll\Java\Projects\springboot-web-quickstart\Tlias-web-stduy)
+2025-11-09 11:00:29.304 [main] INFO  com.hsyuan.tliaswebstduy.TliasWebStduyApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-09 11:00:31.251 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-11-09 11:00:31.253 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-09 11:00:31.254 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-09 11:00:31.303 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-09 11:00:32.757 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-11-09 11:00:32.876 [main] INFO  com.hsyuan.tliaswebstduy.TliasWebStduyApplication - Started TliasWebStduyApplication in 4.367 seconds (process running for 5.457)
+2025-11-09 11:01:24.436 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-09 11:01:50.977 [http-nio-8081-exec-8] INFO  com.hsyuan.tliaswebstduy.controller.EmpController - 分页查询：1 ，5
+2025-11-09 11:01:51.099 [http-nio-8081-exec-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-09 11:01:51.353 [http-nio-8081-exec-8] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45d0eb1d
+2025-11-09 11:01:51.356 [http-nio-8081-exec-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-09 11:01:58.343 [http-nio-8081-exec-10] INFO  com.hsyuan.tliaswebstduy.controller.EmpController - 分页查询：1 ，10
+2025-11-09 11:03:00.479 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-09 11:03:00.480 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-09 11:03:00.489 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-09 11:03:00.489 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
