@@ -19,8 +19,8 @@ spring:
     url: jdbc:mysql:///tlias?useSSL=false&useServerPrepStmts=true&allowPublicKeyRetrieval=true
     # 数据库登录用户名
     username: root
-    # 数据库登录密码
-    password: "054670"
+    # 数据库登录密码(安全考虑)
+    password: ""
   servlet:
     multipart:
       #最大单个文件大小
@@ -99,5 +99,6 @@ logging:
 aliyun:
   oss:
     endpoint: "https://oss-cn-hangzhou.aliyuncs.com"
-    bucketName: "tlias-hsyuan-study"
+    # 安全考虑
+    bucketName: ""
     region: "cn-hangzhou"
